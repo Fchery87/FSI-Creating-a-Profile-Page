@@ -36,7 +36,11 @@ let ul = document.createElement('ul');
 
 let feedingTimes = ['9:00 AM', '12:00 PM', '5:00 PM']
 
-for(let i=0; i < feedingTimes.length;i++) {
+for(let i=0; i < feedingTimes.length; i++) {
     let li = document.createElement('li');
-    li.textContent
-})
+    console.log(li, feedingTimes[i])
+    li.textContent = feedingTimes[i];
+    ul.append(li)
+}
+
+dogDetails.append(ul)
